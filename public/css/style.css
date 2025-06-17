@@ -1,11 +1,10 @@
 body {
-    margin: 0;
-    padding: 0;
+    padding: 0 !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #e9e4fa, #f0e9fb, #eee8f6);
 }
 .navbar {
     height: 5rem;
+    width: 100%;
     background: linear-gradient(90deg, #3A225D, #8768b6);
     display: flex;
     justify-content: space-between;
@@ -81,4 +80,67 @@ body {
 
 .fsocials i {
     font-size: 20px;
+}
+
+
+/*card*/
+
+.page-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #3A225D;
+}
+
+.card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    width: 280px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+
+}
+
+.card-img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    color: #3A225D;
+}
+
+.card-desc {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-location,
+.card-price {
+    font-size: 0.85rem;
+    color: #666;
 }
