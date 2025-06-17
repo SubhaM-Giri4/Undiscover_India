@@ -15,7 +15,7 @@ const sampleListings = [
         description: "Sleep under the stars in the golden dunes of Jaisalmer with authentic Rajasthani cuisine and folk performances.",
         image: {
             filename: "desertcamp",
-            url: "https://images.unsplash.com/photo-1580980541310-7b1cded7a7fd?auto=format&fit=crop&w=800&q=60"
+            url: "https://pix10.agoda.net/hotelImages/686952/-1/cf0f881305d251f951aa274f2e18cfbf.png?ca=8&ce=1&s=414x232&ar=16x9"
         },
         price: 2200,
         location: "Jaisalmer",
@@ -26,7 +26,7 @@ const sampleListings = [
         description: "Rustic wooden cabin overlooking snow-capped peaks. Ideal for meditation and scenic treks.",
         image: {
             filename: "himalayacabins",
-            url: "https://images.unsplash.com/photo-1505480449763-1f8ed1c2f54c?auto=format&fit=crop&w=800&q=60"
+            url: "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5NjIxNTA3Mzk1Njc3NTE3Mw%3D%3D/original/04cf728d-b9aa-41bd-aee7-d09079c62fe3.jpeg"
         },
         price: 2000,
         location: "Manali",
@@ -48,7 +48,7 @@ const sampleListings = [
         description: "Experience authentic Kutchi architecture and arts in a traditional bhunga home in Gujarat’s white desert.",
         image: {
             filename: "kutchhome",
-            url: "https://images.unsplash.com/photo-1618502459110-3dc31282bc7f?auto=format&fit=crop&w=800&q=60"
+            url: "https://img1.wsimg.com/isteam/ip/d49cea5a-4513-4b21-b60c-bdde7ee01015/tea%20garden%20resort%20stay%20north%20bengal.jpg/:/cr=t:5.74%25,l:0%25,w:100%25,h:88.52%25"
         },
         price: 1400,
         location: "Rann of Kutch",
@@ -59,7 +59,7 @@ const sampleListings = [
         description: "Traditional wooden houseboat stay on the picturesque Dal Lake with Shikara rides and mountain views.",
         image: {
             filename: "dalhouseboat",
-            url: "https://images.unsplash.com/photo-1609263755055-88e64ef47e87?auto=format&fit=crop&w=800&q=60"
+            url: "https://media-cdn.tripadvisor.com/media/photo-s/06/95/df/20/dal-lake.jpg"
         },
         price: 1900,
         location: "Srinagar",
@@ -70,7 +70,7 @@ const sampleListings = [
         description: "Off-grid, sustainable eco-living nestled in the lush biodiversity of the Sahyadri hills.",
         image: {
             filename: "ecovillage",
-            url: "https://images.unsplash.com/photo-1623068970637-cbe8b8a35dd9?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.indiaspend.com/h-upload/old_images/342947-western-ghats1440.jpg"
         },
         price: 1500,
         location: "Panchgani",
@@ -81,7 +81,7 @@ const sampleListings = [
         description: "Charming Indo-French architecture, colored alleys, and cafes just steps away from the beach promenade.",
         image: {
             filename: "pondicherry",
-            url: "https://images.unsplash.com/photo-1608702980965-9f4ebd1cc272?auto=format&fit=crop&w=800&q=60"
+            url: "https://lh6.googleusercontent.com/proxy/2bFq5Oi46nQLGQ9dAiu6jrqwsQ-RE8SVWRROPlHa-x7B8l3fghh1w79qhW6xEtp14ADIUJhpR_WK0751tzuOeEnvZAjqlQ2dXuqB32fh97NJ5OibxQAZ7vylmGRVw1JhFuznFx0sSceLaObG6x-lfOyfLA6sO3I=w252-h174-k-no"
         },
         price: 1300,
         location: "Pondicherry",
@@ -92,7 +92,7 @@ const sampleListings = [
         description: "Live among the treetops with birdsong and jungle trails in Wayanad’s wilderness retreats.",
         image: {
             filename: "wayanadtreehouse",
-            url: "https://images.unsplash.com/photo-1608677640773-2e8d9a2dcb52?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.ashextourism.com/hotelsresorts/kerala/images/vanyatreehouse/thouse.jpg"
         },
         price: 1700,
         location: "Wayanad",
@@ -103,7 +103,7 @@ const sampleListings = [
         description: "A spiritual retreat along the Ganges with rooftop yoga, sunrise Aarti, and ancient alley walks.",
         image: {
             filename: "varanasighat",
-            url: "https://images.unsplash.com/photo-1586363104866-7f04e4a3e06b?auto=format&fit=crop&w=800&q=60"
+            url: "https://livefreehostels.com/wp-content/uploads/2024/04/1-1024x682.png"
         },
         price: 1100,
         location: "Varanasi",
@@ -115,7 +115,7 @@ const sampleListings = [
         description: "High-altitude desert charm with yak herders, starry skies, and raw Himalayan beauty.",
         image: {
             filename: "spiticamp",
-            url: "https://images.unsplash.com/photo-1603548022191-4621a4c37002?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.kamzangjourneys.com/wp-content/uploads/2021/05/Ladakh-Teri-Campsite-Slider.jpg"
         },
         price: 2500,
         location: "Kaza",
@@ -126,7 +126,7 @@ const sampleListings = [
         description: "A serene bamboo hut crafted by local artisans in the tribal forests of Chhattisgarh.",
         image: {
             filename: "bamboocottage",
-            url: "https://images.unsplash.com/photo-1561469374-8c1e8a8b7fd7?auto=format&fit=crop&w=800&q=60"
+            url: "https://5.imimg.com/data5/SELLER/Default/2022/5/VJ/GM/GC/148507659/modern-bamboo-house-jagdalpur-charre-marre-waterfalls-sirpur-mainpat-raipur-chhattisgarh.jpg"
         },
         price: 1000,
         location: "Jagdalpur",
@@ -137,7 +137,7 @@ const sampleListings = [
         description: "Unique stay on the Brahmaputra river, India’s largest river island, with cultural drumming evenings.",
         image: {
             filename: "majulitent",
-            url: "https://images.unsplash.com/photo-1613459612532-1e12203ef33b?auto=format&fit=crop&w=800&q=60"
+            url: "https://footloosedev.com/wp-content/uploads/2016/01/bamboo-cottage.jpg"
         },
         price: 1600,
         location: "Majuli",
@@ -148,7 +148,7 @@ const sampleListings = [
         description: "Find inner peace with guided meditation, organic meals, and views of the Himalayan foothills.",
         image: {
             filename: "rishikeshashram",
-            url: "https://images.unsplash.com/photo-1581291519195-ef11498d1cf5?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.rishikeshyogpeeth.com/img/abhayaranya-yoga-ashram.webp"
         },
         price: 900,
         location: "Rishikesh",
@@ -159,7 +159,7 @@ const sampleListings = [
         description: "Stay beside a 16th-century stepwell and explore royal ruins in a hidden Rajasthan village.",
         image: {
             filename: "stepwellstay",
-            url: "https://images.unsplash.com/photo-1602434070431-6c5c258f6e1f?auto=format&fit=crop&w=800&q=60"
+            url: "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/3e/10/36/facade.jpg?w=900&h=500&s=1"
         },
         price: 1400,
         location: "Abhaneri",
@@ -170,7 +170,7 @@ const sampleListings = [
         description: "Sleep above clouds in an eco-lodge nestled beside living root bridges and waterfalls.",
         image: {
             filename: "meghalayaeco",
-            url: "https://images.unsplash.com/photo-1568485688988-7f24f9f53f41?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.tigersafari.net/wp-content/uploads/2024/10/Root-Bridge-870x575.jpg"
         },
         price: 1300,
         location: "Cherrapunji",
@@ -181,7 +181,7 @@ const sampleListings = [
         description: "Authentic Bengali terracotta architecture with local potters and serene village ponds.",
         image: {
             filename: "terracottabengal",
-            url: "https://images.unsplash.com/photo-1584367360964-9c6bd89d9d1f?auto=format&fit=crop&w=800&q=60"
+            url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZB5cVznF6YYTDLIxOr_NKs-sRogR5O0yvAw&s"
         },
         price: 1200,
         location: "Bishnupur",
@@ -192,7 +192,7 @@ const sampleListings = [
         description: "Stay in a 100-year-old wooden ancestral home, surrounded by spice plantations and rituals.",
         image: {
             filename: "keralahouse",
-            url: "https://images.unsplash.com/photo-1612285973574-72e77bc127fc?auto=format&fit=crop&w=800&q=60"
+            url: "https://www.indiashotels.com/webadmin/hotelgallery/_13286.jpeg"
         },
         price: 1500,
         location: "Kottayam",
@@ -203,7 +203,7 @@ const sampleListings = [
         description: "Unique cave dwellings carved into the rock face, preserving tribal lifestyles.",
         image: {
             filename: "odishacaves",
-            url: "https://images.unsplash.com/photo-1650896543404-88a50a40b2c7?auto=format&fit=crop&w=800&q=60"
+            url: "https://d3sftlgbtusmnv.cloudfront.net/blog/wp-content/uploads/2024/09/Balda-Caves-Cover-840x425.jpg"
         },
         price: 1300,
         location: "Koraput",
@@ -214,7 +214,7 @@ const sampleListings = [
         description: "Cozy yurts of Ladakhi nomads in the sand dunes of a high-altitude cold desert oasis.",
         image: {
             filename: "nubrayurt",
-            url: "https://images.unsplash.com/photo-1629194933271-6aeb1be5f3b5?auto=format&fit=crop&w=800&q=60"
+            url: "https://sb.ecobnb.net/app/uploads/sites/3/2020/04/yang-shuo-_Zbbs4muqkQ-unsplash-e1584014705915-1170x490.jpg.webp"
         },
         price: 2400,
         location: "Hunder",
