@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9e4fa, #f0e9fb, #eee8f6);
+}
+.navbar {
+    height: 5rem;
+    background: linear-gradient(90deg, #3A225D, #8768b6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #f5d142;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-brand i {
+    font-size: 40px;
+    margin-right: 10px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white !important;
+    margin-left: 1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: #ffd700 !important;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+
+.fa-duotone{
+    color: #dcb126;
+    padding: 20px;
+    font-size: 40px !important;
+}
+
+.finfo {
+    background-color: #8768b6;
+    padding: 20px 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.finfolinks, .fsocials {
+    margin: 5px 0;
+}
+
+.finfolinks a, .fsocials a {
+    text-decoration: none;
+    color: #f3e8ff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.finfolinks a:hover, .fsocials a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.fsocials i {
+    font-size: 20px;
+}
