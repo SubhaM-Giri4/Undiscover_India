@@ -6,7 +6,7 @@ const sampleListings = [
             filename: "backwaters",
             url: "https://www.tourwings.com/media/packages/0622835373ee7d5e7c975a3213b966ff.jpg"
         },
-        price: 1800,
+        price: 2800,
         location: "Alleppey",
         country: "India"
     },
@@ -17,7 +17,7 @@ const sampleListings = [
             filename: "desertcamp",
             url: "https://pix10.agoda.net/hotelImages/686952/-1/cf0f881305d251f951aa274f2e18cfbf.png?ca=8&ce=1&s=414x232&ar=16x9"
         },
-        price: 2200,
+        price: 3200,
         location: "Jaisalmer",
         country: "India"
     },
@@ -28,8 +28,19 @@ const sampleListings = [
             filename: "himalayacabins",
             url: "https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI5NjIxNTA3Mzk1Njc3NTE3Mw%3D%3D/original/04cf728d-b9aa-41bd-aee7-d09079c62fe3.jpeg"
         },
-        price: 2000,
+        price: 3000,
         location: "Manali",
+        country: "India"
+    },
+    {
+        title: "Nomad's Yurt in Nubra",
+        description: "Cozy yurts of Ladakhi nomads in the sand dunes of a high-altitude cold desert oasis.",
+        image: {
+            filename: "nubrayurt",
+            url: "https://sb.ecobnb.net/app/uploads/sites/3/2020/04/yang-shuo-_Zbbs4muqkQ-unsplash-e1584014705915-1170x490.jpg.webp"
+        },
+        price: 3400,
+        location: "Hunder",
         country: "India"
     },
     {
@@ -37,9 +48,9 @@ const sampleListings = [
         description: "Stay amidst rolling tea plantations in this colonial-era bungalow with panoramic views and local cuisine.",
         image: {
             filename: "teaestate",
-            url: "https://images.unsplash.com/photo-1559034921-51d1c60e6a1d?auto=format&fit=crop&w=800&q=60"
+            url: "https://imgstaticcontent.lbb.in/lbbnew/wp-content/uploads/sites/1/2015/09/140716_GlenburnTeaEstate.jpg?w=1200&h=628&fill=blur&fit=fill"
         },
-        price: 1600,
+        price: 2600,
         location: "Munnar",
         country: "India"
     },
@@ -48,7 +59,7 @@ const sampleListings = [
         description: "Experience authentic Kutchi architecture and arts in a traditional bhunga home in Gujarat’s white desert.",
         image: {
             filename: "kutchhome",
-            url: "https://img1.wsimg.com/isteam/ip/d49cea5a-4513-4b21-b60c-bdde7ee01015/tea%20garden%20resort%20stay%20north%20bengal.jpg/:/cr=t:5.74%25,l:0%25,w:100%25,h:88.52%25"
+            url: "https://desertkingresort.com/wp-content/uploads/2017/12/Slider4-1366x819.jpg"
         },
         price: 1400,
         location: "Rann of Kutch",
@@ -61,7 +72,7 @@ const sampleListings = [
             filename: "dalhouseboat",
             url: "https://media-cdn.tripadvisor.com/media/photo-s/06/95/df/20/dal-lake.jpg"
         },
-        price: 1900,
+        price: 2900,
         location: "Srinagar",
         country: "India"
     },
@@ -72,21 +83,11 @@ const sampleListings = [
             filename: "ecovillage",
             url: "https://www.indiaspend.com/h-upload/old_images/342947-western-ghats1440.jpg"
         },
-        price: 1500,
+        price: 2500,
         location: "Panchgani",
         country: "India"
     },
-    {
-        title: "French Heritage Villa",
-        description: "Charming Indo-French architecture, colored alleys, and cafes just steps away from the beach promenade.",
-        image: {
-            filename: "pondicherry",
-            url: "https://lh6.googleusercontent.com/proxy/2bFq5Oi46nQLGQ9dAiu6jrqwsQ-RE8SVWRROPlHa-x7B8l3fghh1w79qhW6xEtp14ADIUJhpR_WK0751tzuOeEnvZAjqlQ2dXuqB32fh97NJ5OibxQAZ7vylmGRVw1JhFuznFx0sSceLaObG6x-lfOyfLA6sO3I=w252-h174-k-no"
-        },
-        price: 1300,
-        location: "Pondicherry",
-        country: "India"
-    },
+
     {
         title: "Forest Treehouse Adventure",
         description: "Live among the treetops with birdsong and jungle trails in Wayanad’s wilderness retreats.",
@@ -94,7 +95,7 @@ const sampleListings = [
             filename: "wayanadtreehouse",
             url: "https://www.ashextourism.com/hotelsresorts/kerala/images/vanyatreehouse/thouse.jpg"
         },
-        price: 1700,
+        price: 2700,
         location: "Wayanad",
         country: "India"
     },
@@ -105,7 +106,7 @@ const sampleListings = [
             filename: "varanasighat",
             url: "https://livefreehostels.com/wp-content/uploads/2024/04/1-1024x682.png"
         },
-        price: 1100,
+        price: 2100,
         location: "Varanasi",
         country: "India"
     },
@@ -117,7 +118,7 @@ const sampleListings = [
             filename: "spiticamp",
             url: "https://www.kamzangjourneys.com/wp-content/uploads/2021/05/Ladakh-Teri-Campsite-Slider.jpg"
         },
-        price: 2500,
+        price: 3500,
         location: "Kaza",
         country: "India"
     },
@@ -128,7 +129,7 @@ const sampleListings = [
             filename: "bamboocottage",
             url: "https://5.imimg.com/data5/SELLER/Default/2022/5/VJ/GM/GC/148507659/modern-bamboo-house-jagdalpur-charre-marre-waterfalls-sirpur-mainpat-raipur-chhattisgarh.jpg"
         },
-        price: 1000,
+        price: 2000,
         location: "Jagdalpur",
         country: "India"
     },
@@ -139,7 +140,7 @@ const sampleListings = [
             filename: "majulitent",
             url: "https://footloosedev.com/wp-content/uploads/2016/01/bamboo-cottage.jpg"
         },
-        price: 1600,
+        price: 2600,
         location: "Majuli",
         country: "India"
     },
@@ -172,7 +173,7 @@ const sampleListings = [
             filename: "meghalayaeco",
             url: "https://www.tigersafari.net/wp-content/uploads/2024/10/Root-Bridge-870x575.jpg"
         },
-        price: 1300,
+        price: 2300,
         location: "Cherrapunji",
         country: "India"
     },
@@ -183,7 +184,7 @@ const sampleListings = [
             filename: "terracottabengal",
             url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZB5cVznF6YYTDLIxOr_NKs-sRogR5O0yvAw&s"
         },
-        price: 1200,
+        price: 2200,
         location: "Bishnupur",
         country: "India"
     },
@@ -194,7 +195,7 @@ const sampleListings = [
             filename: "keralahouse",
             url: "https://www.indiashotels.com/webadmin/hotelgallery/_13286.jpeg"
         },
-        price: 1500,
+        price: 2500,
         location: "Kottayam",
         country: "India"
     },
@@ -210,16 +211,17 @@ const sampleListings = [
         country: "India"
     },
     {
-        title: "Nomad's Yurt in Nubra",
-        description: "Cozy yurts of Ladakhi nomads in the sand dunes of a high-altitude cold desert oasis.",
+        title: "French Heritage Villa",
+        description: "Charming Indo-French architecture, colored alleys, and cafes just steps away from the beach promenade.",
         image: {
-            filename: "nubrayurt",
-            url: "https://sb.ecobnb.net/app/uploads/sites/3/2020/04/yang-shuo-_Zbbs4muqkQ-unsplash-e1584014705915-1170x490.jpg.webp"
+            filename: "pondicherry",
+            url: "https://lh6.googleusercontent.com/proxy/2bFq5Oi46nQLGQ9dAiu6jrqwsQ-RE8SVWRROPlHa-x7B8l3fghh1w79qhW6xEtp14ADIUJhpR_WK0751tzuOeEnvZAjqlQ2dXuqB32fh97NJ5OibxQAZ7vylmGRVw1JhFuznFx0sSceLaObG6x-lfOyfLA6sO3I=w252-h174-k-no"
         },
-        price: 2400,
-        location: "Hunder",
+        price: 2300,
+        location: "Pondicherry",
         country: "India"
-    }
+    },
+
 ];
 
 module.exports = { data: sampleListings };

@@ -5,11 +5,11 @@ body {
 .navbar {
     height: 5rem;
     width: 100%;
-    background: linear-gradient(90deg, #3A225D, #8768b6);
+    background: linear-gradient(90deg, #3A225D, #463168);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1.5rem ;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -88,6 +88,7 @@ body {
 .page-title {
     text-align: center;
     font-size: 2rem;
+
     margin-bottom: 30px;
     color: #3A225D;
 }
@@ -97,40 +98,49 @@ body {
     flex-wrap: wrap;
     text-decoration: none;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .card-link {
     text-decoration: none;
     color: inherit;
-    width: 280px;
+    width: 400px;
 }
 
 .card {
     background-color: white;
-    border-radius: 10px;
-    overflow: hidden;
+    border-radius: 10px !important;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    /*transform: translateY(-6px) scale(1.02);*/
+    cursor: pointer;
+    background-color: #ba9aea;
+
 
 }
 
 .card-img {
     width: 100%;
-    height: 180px;
+    height: 280px;
     object-fit: cover;
+    border-radius: 10px !important;
+
+
 }
 
 .card-body {
     padding: 15px;
+    height: 180px;
+
 }
 
 .card-title {
     font-size: 1.2rem;
     margin: 0 0 10px;
-    color: #3A225D;
+    color: #3A225D !important;
+    font-weight: bold;
 }
 
 .card-desc {
