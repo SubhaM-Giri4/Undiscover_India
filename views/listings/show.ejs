@@ -1,17 +1,29 @@
-<% layout('/layouts/boilerplate') -%><body>
+<% layout('/layouts/boilerplate') -%>
 <body>
-<h3>Listing Details :</h3>
-<ul>
-    <li><%= listing.title %></li>
-    <li><%= listing.description %></li>
-    <li>&#8377; <%= listing.price.toLocaleString("en-IN") %></li>
-    <li><%= listing.location %></li>
-    <li><%= listing.country %></li>
-</ul>
-<br />
-<a href="/listings/<%= listing._id %>/edit">Edit this Listing</a>
-<br /><br />
-<form method="POST" action="/listings/<%=listing._id%>?_method=DELETE">
-    <button>Delete this listing</button>
-</form>
+<h2 class="text-center mb-4">Listing Details</h2>
+
+<div class="container">
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-6 text-center">
+            <img src="<%= listing.image.url %>" alt="Listing image" class="img-fluid rounded mb-3">
+            <ul class="list-unstyled">
+                <li><strong><%= listing.title %></strong></li>
+                <li><%= listing.description %></li>
+                <li>₹ <%= listing.price.toLocaleString("en-IN") %></li>
+                <li><%= listing.location %>, <%= listing.country %></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-3 text-end">
+            <a href="/listings/<%= listing._id %>/edit" class="btn btn-warning w-100">Edit</a>
+        </div>
+        <div class="col-md-3">
+            <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE">
+                <button class="btn btn-danger w-100">Delete</button>
+            </form>
+        </div>
+    </div>
+</div>
 </body>

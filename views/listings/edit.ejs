@@ -1,36 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Undiscover_India</title>
-</head>
-<body>
-<h3>Edit your Listing</h3>
+<% layout('/layouts/boilerplate') -%>
+
+<h2>Edit Your Hidden Gem 🏞️</h2>
+
 <form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
-    <input name="listing[title]" value="<%= listing.title %>" type="text" />
-    <br /><br />
-    <textarea name="listing[description]">
-<%= listing.description %></textarea
-    >
-    <br /><br />
-    <input name="listing[image]" value="<%= listing.image %>" type="text" />
-    <br /><br />
-    <input name="listing[price]" value="<%= listing.price %>" type="number" />
-    <br /><br />
-    <input
-            name="listing[country]"
-            value="<%= listing.country %>"
-            type="text"
-    />
-    <br /><br />
-    <input
-            name="listing[location]"
-            value="<%= listing.location %>"
-            type="text"
-    />
-    <br /><br />
-    <button>Edit</button>
+
+    <label for="title">What's the new name?</label><br>
+    <input id="title" name="listing[title]" value="<%= listing.title %>" type="text" />
+    <br><br>
+
+    <label for="desc">Got a better description?</label><br>
+    <textarea id="desc" name="listing[description]"><%= listing.description %></textarea>
+    <br><br>
+
+    <label for="img">Want to change the photo?</label><br>
+    <input id="img" name="listing[image]" value="<%= listing.image %>" type="text" />
+    <br><br>
+
+    <label for="price">New price tag?</label><br>
+    <input id="price" name="listing[price]" value="<%= listing.price %>" type="number" />
+    <br><br>
+
+    <label for="country">Country where it hides</label><br>
+    <input id="country" name="listing[country]" value="<%= listing.country %>" type="text" />
+    <br><br>
+
+    <label for="location">Exact location (shh... keep it secret!)</label><br>
+    <input id="location" name="listing[location]" value="<%= listing.location %>" type="text" />
+    <br><br>
+
+    <button type="submit">Update Treasure 🗺️</button>
 </form>
-</body>
-</html>

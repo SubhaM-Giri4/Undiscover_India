@@ -1,37 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WanderLust</title>
-</head>
-<body>
-<h3>Create a New Listing</h3>
-<form method="POST" action="/listings">
-    <input name="listing[title]" placeholder="enter title" type="text" />
-    <br /><br />
-    <textarea
-            name="listing[description]"
-            placeholder="enter description"
-    ></textarea>
-    <br /><br />
-    <input
-            name="listing[image]"
-            placeholder="enter image URL/Link"
-            type="text"
-    />
-    <br /><br />
-    <input name="listing[price]" placeholder="enter price" type="number" />
-    <br /><br />
-    <input name="listing[country]" placeholder="enter country" type="text" />
-    <br /><br />
-    <input
-            name="listing[location]"
-            placeholder="enter location"
-            type="text"
-    />
-    <br /><br />
-    <button>Add</button>
+<% layout('/layouts/boilerplate') -%>
+
+<h2 class="form-heading">Add a Cool Spot</h2>
+
+<form method="POST" action="/listings" class="listing-form offset-2">
+    <label for="title">Spot name?</label><br />
+    <input id="title" name="listing[title]" placeholder="Chill Cabin" type="text" /><br /><br />
+
+    <label for="description">What's it like?</label><br />
+    <textarea id="description" name="listing[description]" placeholder="Peaceful, wild, haunted?"></textarea><br /><br />
+
+    <label for="image">Got a pic?</label><br />
+    <input id="image" name="listing[image]" placeholder="Paste image link" type="text" /><br /><br />
+
+    <label for="price">Price (₹)?</label><br />
+    <input id="price" name="listing[price]" placeholder="999" type="number" /><br /><br />
+
+    <div class="row ">
+        <div class="col-md-6">
+            <label for="price">Price (₹)?</label><br />
+            <input id="price" name="listing[price]" placeholder="999" type="number" /><br /><br />
+        </div>
+        <div class="col-md-6">
+            <label for="country" >Which country?</label><br />
+            <input id="country" name="listing[country]" placeholder="India" type="text" /><br /><br />
+        </div>
+
+    </div>
+
+
+    <label for="location">Pin the place!</label><br />
+    <input id="location" name="listing[location]" placeholder="Rishikesh" type="text" /><br /><br />
+
+    <button type="submit">Add it </button>
 </form>
-</body>
-</html>
