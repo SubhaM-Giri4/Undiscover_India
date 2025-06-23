@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b1d7c2a1-ce8a-4b17-b71e-9d31dce907e0" name="Changes" comment="ejs mate try">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <updated>1749584068637</updated>
       <workItem from="1749584071257" duration="73538000" />
       <workItem from="1750356550957" duration="97000" />
-      <workItem from="1750356949304" duration="9165000" />
+      <workItem from="1750356949304" duration="11925000" />
     </task>
     <task id="LOCAL-00001" summary="ejs mate try">
       <option name="closed" value="true" />
