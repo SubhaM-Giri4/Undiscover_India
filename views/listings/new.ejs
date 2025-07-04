@@ -1,13 +1,13 @@
 <% layout('/layouts/boilerplate') -%>
 
-<h2 class="form-heading">Add a Cool Spot</h2>
+<h2 class="form-heading" xmlns="http://www.w3.org/1999/html">Add a Cool Spot</h2>
 
-<form method="POST" action="/listings" class="listing-form offset-2" >
+<form method="POST" action="/listings" class="needs-validation offset-2" novalidate >
     <label for="title">Spot name?</label>
-    <input id="title" name="listing[title]" placeholder="Chill Cabin" type="text" /><br />
+    <div><input id="title" name="listing[title]" placeholder="Chill Cabin" type="text" required/><br /><div>Titles look Good</div></div>
 
     <label for="description">What's it like?</label>
-    <textarea id="description" name="listing[description]" placeholder="Peaceful, wild, haunted?"></textarea><br />
+    <textarea id="description" name="listing[description]" placeholder="Peaceful, wild, haunted?" required></textarea><br />
 
     <label for="image">Got a pic?</label>
     <input id="image" name="listing[image]" placeholder="Paste image link" type="text" /><br />
@@ -16,18 +16,18 @@
     <div class="row ">
         <div class="col-md-6">
             <label for="price">Price (₹)?</label>
-            <input id="price" name="listing[price]" placeholder="999" type="number" /><br />
+            <input id="price" name="listing[price]" placeholder="999" type="number" required/><br />
         </div>
         <div class="col-md-6">
             <label for="country" >Which country?</label>
-            <input id="country" name="listing[country]" placeholder="India" type="text" /><br />
+            <input id="country" name="listing[country]" placeholder="India" type="text" required/><br />
         </div>
 
     </div>
 
 
     <label for="location">Pin the place!</label>
-    <input id="location" name="listing[location]" placeholder="Rishikesh" type="text" /><br />
+    <input id="location" name="listing[location]" placeholder="Rishikesh" type="text" required/><br />
 
     <button type="submit">Add it </button>
 </form>
