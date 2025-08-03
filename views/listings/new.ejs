@@ -1,33 +1,48 @@
 <% layout('/layouts/boilerplate') -%>
 
-<h2 class="form-heading" xmlns="http://www.w3.org/1999/html">Add a Cool Spot</h2>
+<h2 class="form-heading">Add a Cool Spot</h2>
 
-<form method="POST" action="/listings" novalidate class="needs-validation"  >
-    <label for="title">Spot name?</label>
-    <div><input id="title" name="listing[title]" placeholder="Chill Cabin" type="text" required/><br /><div>Titles look Good</div></div>
-
-    <label for="description">What's it like?</label>
-    <textarea id="description" name="listing[description]" placeholder="Peaceful, wild, haunted?" required></textarea><br />
-
-    <label for="image">Got a pic?</label>
-    <input id="image" name="listing[image]" placeholder="Paste image link" type="text" /><br />
-
-
-    <div class="row ">
-        <div class="col-md-6">
-            <label for="price">Price (₹)?</label>
-            <input id="price" name="listing[price]" placeholder="999" type="number" required/><br />
-        </div>
-        <div class="col-md-6">
-            <label for="country" >Which country?</label>
-            <input id="country" name="listing[country]" placeholder="India" type="text" required/><br />
-        </div>
-
+<form class="needs-validation" method="POST" action="/listings" novalidate>
+    <div class="mb-3">
+        <label for="title" class="form-label">Spot name?</label>
+        <input id="title" name="listing[title]" placeholder="Chill Cabin" type="text" class="form-control" required />
+        <div class="valid-feedback">Title looks good</div>
+        <div class="invalid-feedback">Please enter title</div>
     </div>
 
+    <div class="mb-3">
+        <label for="description" class="form-label">What's it like?</label>
+        <textarea id="description" name="listing[description]" placeholder="Peaceful, wild, haunted?" class="form-control" required></textarea>
+        <div class="invalid-feedback">Please enter description</div>
+    </div>
 
-    <label for="location">Pin the place!</label>
-    <input id="location" name="listing[location]" placeholder="Rishikesh" type="text" required/><br />
+    <div class="mb-3">
+        <label for="image" class="form-label">Got a pic?</label>
+        <input id="image" name="listing[image]" placeholder="Paste image link" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter image link</div>
+    </div>
 
-    <button type="submit">Add it </button>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <label for="price" class="form-label">Price (₹)?</label>
+            <input id="price" name="listing[price]" placeholder="999" type="number" class="form-control" required />
+            <div class="invalid-feedback">Please enter valid price</div>
+        </div>
+
+        <div class="col-md-6 mb-3">
+            <label for="country" class="form-label">Which country?</label>
+            <input id="country" name="listing[country]" placeholder="India" type="text" class="form-control" required />
+            <div class="invalid-feedback">Please enter country</div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="location" class="form-label">Pin the place!</label>
+        <input id="location" name="listing[location]" placeholder="Rishikesh" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter location</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add it</button>
 </form>
+
+

@@ -2,31 +2,42 @@
 
 <h2 class="form-heading">Edit Your Hidden Gem 🏞️</h2>
 
-<form method="POST" action="/listings/<%= listing._id %>?_method=PUT">
+<form class="needs-validation" method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate>
+    <div class="mb-3">
+        <label for="title" class="form-label">What's the new name?</label>
+        <input id="title" name="listing[title]" value="<%= listing.title %>" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter a title.</div>
+    </div>
 
-    <label for="title">What's the new name?</label><br>
-    <input id="title" name="listing[title]" value="<%= listing.title %>" type="text" />
-    <br><br>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Got a better description?</label>
+        <textarea id="desc" name="listing[description]" class="form-control" required><%= listing.description %></textarea>
+        <div class="invalid-feedback">Please enter a description.</div>
+    </div>
 
-    <label for="desc">Got a better description?</label><br>
-    <textarea id="desc" name="listing[description]"><%= listing.description %></textarea>
-    <br><br>
+    <div class="mb-3">
+        <label for="img" class="form-label">Want to change the photo?</label>
+        <input id="img" name="listing[image]" value="<%= listing.image %>" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter an image URL.</div>
+    </div>
 
-    <label for="img">Want to change the photo?</label><br>
-    <input id="img" name="listing[image]" value="<%= listing.image %>" type="text" />
-    <br><br>
+    <div class="mb-3">
+        <label for="price" class="form-label">New price tag?</label>
+        <input id="price" name="listing[price]" value="<%= listing.price %>" type="number" class="form-control" required />
+        <div class="invalid-feedback">Please enter a price.</div>
+    </div>
 
-    <label for="price">New price tag?</label><br>
-    <input id="price" name="listing[price]" value="<%= listing.price %>" type="number" />
-    <br><br>
+    <div class="mb-3">
+        <label for="country" class="form-label">Country where it hides</label>
+        <input id="country" name="listing[country]" value="<%= listing.country %>" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter a country.</div>
+    </div>
 
-    <label for="country">Country where it hides</label><br>
-    <input id="country" name="listing[country]" value="<%= listing.country %>" type="text" />
-    <br><br>
+    <div class="mb-3">
+        <label for="location" class="form-label">Exact location (shh... keep it secret!)</label>
+        <input id="location" name="listing[location]" value="<%= listing.location %>" type="text" class="form-control" required />
+        <div class="invalid-feedback">Please enter a location.</div>
+    </div>
 
-    <label for="location">Exact location (shh... keep it secret!)</label><br>
-    <input id="location" name="listing[location]" value="<%= listing.location %>" type="text" />
-    <br><br>
-
-    <button type="submit">Update Treasure 🗺️</button>
+    <button type="submit" class="btn btn-primary">Update Treasure 🗺️</button>
 </form>
