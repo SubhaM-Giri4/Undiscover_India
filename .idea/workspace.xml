@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1d7c2a1-ce8a-4b17-b71e-9d31dce907e0" name="Changes" comment="ejs mate try">
-      <change afterPath="$PROJECT_DIR$/views/error.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/schema.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ExpressError.js" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ExpressError.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/layouts/boilerplate.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/layouts/boilerplate.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/listings/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/listings/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +106,7 @@
       <workItem from="1751911134402" duration="1889000" />
       <workItem from="1754205055738" duration="3063000" />
       <workItem from="1754219108345" duration="2391000" />
-      <workItem from="1754222359811" duration="20724000" />
+      <workItem from="1754222359811" duration="25439000" />
     </task>
     <task id="LOCAL-00001" summary="ejs mate try">
       <option name="closed" value="true" />

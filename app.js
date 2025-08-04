@@ -8,7 +8,7 @@ const ejsMate = require("ejs-mate");
 const MONGO_URL = "mongodb://127.0.0.1:27017/Undiscover_India";
 const wrapAsync = require("./utils/wrapAsync");
 const ExpressError = require("./utils/ExpressError");
-
+const {listingSchema} = require("./schema.js");
 main()
     .then(() => {
         console.log("connected to DB");
@@ -50,11 +50,27 @@ app.get("/listings/:id",  wrapAsync(async (req, res) => {
     res.render("listings/show.ejs", { listing });
 }));
 
-//Create Route
-app.post("/listings", wrapAsync(async (req, res, next)  => {
-    if(!req.body.listing){
-        throw new ExpressError(400,"Send Data For Listing");
+const validatelisting = (req,res,next) => {
+
+    let {error} = listingSchema.validate(req.body);
+    //console.log(result);
+    if(error) {
+        throw new ExpressError(400,error);
+    }else{
+        next();
     }
+}
+//Create Route
+app.post("/listings", validatelisting,wrapAsync(async (req, res, next)  => {
+    //if(!req.body.listing){
+    //     throw new ExpressError(400,"Send Data For Listing");
+    // }
+
+    // let result = listingSchema.validate(req.body);
+    // console.log(result);
+    // if(result.error) {
+    //     throw new ExpressError(400,result.error);
+    // }
     const newListing = new Listing(req.body.listing);
     await newListing.save();
     res.redirect("/listings");
@@ -72,7 +88,7 @@ app.get("/listings/:id/edit",  wrapAsync(async (req, res) => {
 }));
 
 //Update Route
-app.put("/listings/:id",  wrapAsync(async (req, res) => {
+app.put("/listings/:id", validatelisting, wrapAsync(async (req, res) => {
     let { id } = req.params;
     await Listing.findByIdAndUpdate(id, { ...req.body.listing });
     res.redirect(`/listings/${id}`);
