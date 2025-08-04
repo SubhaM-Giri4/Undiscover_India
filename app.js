@@ -8,6 +8,7 @@ const ejsMate = require("ejs-mate");
 const MONGO_URL = "mongodb://127.0.0.1:27017/Undiscover_India";
 const wrapAsync = require("./utils/wrapAsync");
 const ExpressError = require("./utils/ExpressError");
+
 main()
     .then(() => {
         console.log("connected to DB");
@@ -51,7 +52,9 @@ app.get("/listings/:id",  wrapAsync(async (req, res) => {
 
 //Create Route
 app.post("/listings", wrapAsync(async (req, res, next)  => {
-
+    if(!req.body.listing){
+        throw new ExpressError(400,"Send Data For Listing");
+    }
     const newListing = new Listing(req.body.listing);
     await newListing.save();
     res.redirect("/listings");
@@ -60,6 +63,9 @@ app.post("/listings", wrapAsync(async (req, res, next)  => {
 
 //Edit Route
 app.get("/listings/:id/edit",  wrapAsync(async (req, res) => {
+    if(!req.body.listing){
+        throw new ExpressError(400,"Send Data For Listing");
+    }
     let { id } = req.params;
     const listing = await Listing.findById(id);
     res.render("listings/edit.ejs", { listing });
@@ -103,10 +109,12 @@ app.delete("/listings/:id",  wrapAsync( async (req, res) => {
 // app.all("*", (req, res, next) => {
 //     next(new ExpressError(404,"Page Not Found"));
 // });
-// app.use((err, req, res, next) => {
-//     let {statusCode, message} = err;
-//     res.status(statusCode).send(message);
-// });
+
+app.use((err, req, res, next) => {
+    let {statusCode = 500 , message = "something went wrong"} = err;
+    //res.status(statusCode).send(message);//normal error send
+    res.render("error.ejs", { message: message });//we send our custom design error
+});
 
 app.listen(8080, () => {
     console.log("server is listening to port 8080");
