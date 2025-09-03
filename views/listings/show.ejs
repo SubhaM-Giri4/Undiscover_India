@@ -21,15 +21,16 @@
             </div>
             <div>
                 <h4>Leave a Review</h4>
-                <form>
-                    <div>
+                <form action="/listings/<%= listing._id %>/reviews" method="POST">
+
+                <div>
                        <label for="review" class="form-label">Rating</label>
-                        <input type="range" min="1" max="5" step="1" value="1" name="rating" id="rating">
+                        <input type="range" min="1" max="5" step="1" value="1" name="review[rating]" id="rating">
 
                     </div>
                     <div>
                         <label for="comment" class="form-label">Comments</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10" class="form-control"></textarea>
+                        <textarea  name="review[comment]" id="comment" cols="30" rows="10" class="form-control"></textarea>
                     </div>
                     <button class="btn btn-info d-flex align-items-center justify-content-center px-4" style="height: 42px; width: 150px">Post</button>
                 </form>
