@@ -41,8 +41,32 @@
             </div>
 
         </div>
-        <h4>All Reviews</h4>
-        <p><%= listing.reviews%></p>
+        <div class="row">
+            <div class="col-12">
+                <h3>Reviews</h3>
+                <hr>
+                <div class="row">
+                    <% for(let review of listing.reviews) { %>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Reviewer Name Placeholder</h5>
+                                <p class="card-text">
+                                    <%= review.comment %>
+                                </p>
+                                <p class="card-text">
+                                    <b>Rating:</b> <%= review.rating %> / 5
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+
     </div>
 
 
