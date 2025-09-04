@@ -8,7 +8,7 @@ const ejsMate = require("ejs-mate");
 const MONGO_URL = "mongodb://127.0.0.1:27017/Undiscover_India";
 const wrapAsync = require("./utils/wrapAsync");
 const ExpressError = require("./utils/ExpressError");
-const {listingSchema} = require("./schema.js");
+const {listingSchema , reviewSchema} = require("./schema.js");
 const Review = require("./models/review.js");
 main()
     .then(() => {
@@ -61,8 +61,18 @@ const validatelisting = (req,res,next) => {
         next();
     }
 }
+
+const validateReview = (req,res,next) => {
+    let {error} = listingSchema.validate(req.body);
+
+    if(error) {
+        throw new ExpressError(400,error);
+    }else{
+        next();
+    }
+}
 //Create Route
-app.post("/listings", validatelisting,wrapAsync(async (req, res, next)  => {
+app.post("/listings", validatelisting,validateReview,wrapAsync(async (req, res, next)  => {
     //if(!req.body.listing){
     //     throw new ExpressError(400,"Send Data For Listing");
     // }
