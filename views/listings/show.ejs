@@ -23,8 +23,8 @@
 
                 <form action="/listings/<%= listing._id %>/reviews" method="POST" novalidate class="needs-validation">
                     <h4>   Leave a Review    </h4>
-                <div>
-                       <label for="review" class="form-label">Rating</label>
+                    <div>
+                        <label for="review" class="form-label">Rating</label>
                         <input type="range" min="1" max="5" step="1" value="3" name="review[rating]" id="rating">
 
                     </div>
@@ -57,6 +57,9 @@
                                 <p class="card-text">
                                     <b>Rating:</b> <%= review.rating %> / 5
                                 </p>
+                                <form class = "mb-1"  method="POST" action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
+                                    <button class="btn btn-sm btn-dark">Delete</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -64,10 +67,10 @@
                 </div>
             </div>
         </div>
-            </div>
-        </div>
-
     </div>
+</div>
+
+</div>
 
 
 </div>
