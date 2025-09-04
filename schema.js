@@ -10,3 +10,4 @@ module.exports.listingSchema = Joi.object({
         image: Joi.string().allow("",null)//we allow empty and null value in image
     }).required(),
 })
+
