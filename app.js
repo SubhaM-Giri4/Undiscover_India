@@ -10,7 +10,7 @@ const MONGO_URL = "mongodb://127.0.0.1:27017/Undiscover_India";
 const ExpressError = require("./utils/ExpressError");
 //const {listingSchema , reviewSchema} = require("./schema.js");
 //const Review = require("./models/review.js");
-
+const session = require("express-session");
 const listings = require("./routes/listing.js");
 const reviews = require("./routes/review.js");
 
@@ -32,6 +32,21 @@ app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 app.engine("ejs", ejsMate);
 app.use(express.static(path.join(__dirname, "public")));
+
+
+const sessionOptions = {
+    secret:"justtest",
+    resave: false,
+    saveUninitialized: true,
+    cookie:{
+        expires:Date.now()+7*24*60*1000,
+        maxAge:7*24*60*60*1000,
+        httpOnly:true,
+
+    }
+}
+
+app.use(session(sessionOptions));
 
 app.get("/", (req, res) => {
     res.send("Hi, I am root");
